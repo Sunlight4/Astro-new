@@ -2,7 +2,7 @@ import pygame, objects
 def demo():
     bg_color=[239,169,119]
     heroes=pygame.sprite.Group()
-    heroes.add(objects.PoliceGood([0,320]))
+    heroes.add(objects.Astro([0,320]))
     villains=pygame.sprite.Group()
     villains.add(objects.PoliceEnemy([256,320]))
     rendered=pygame.sprite.Group()

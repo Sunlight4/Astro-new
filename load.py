@@ -23,9 +23,9 @@ def loadroom(room):
         screen.fill(bg)
         rendered.draw(screen)
         clock.tick(30)
-        events=pygame.event.get()
+        kw={"heroes":heroes, "villains":villains, "others":others, "rendered":rendered,
+                      "solid":solid, "events":pygame.event.get()}
         for i in groups:
-            i.update({"heroes":heroes, "others":others, "rendered":rendered,
-                      "solid":solid, "events":pygame.event.get()})
+            i.update(kw)
         rendered.draw(screen)
         flip()
